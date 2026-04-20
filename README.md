@@ -14,11 +14,9 @@
 
 The project uses three main tables:
 
-1. Learners
-
-2. Courses
-
-3. Purchases
+- users → user details
+- courses → course information
+- purchases → transaction data
 
 ## Tools & Technologies
 - SQL (MySQL)
@@ -27,6 +25,13 @@ The project uses three main tables:
 - Aggregate Functions (SUM, AVG, COUNT)
 - Grouping & Filtering (GROUP BY, HAVING)
 - Date Functions
+## SQL Concepts Used
+
+- JOIN
+- GROUP BY
+- ORDER BY
+- Aggregation (SUM, COUNT)
+- Subqueries
 ## Key Analysis 
 - Joined multiple tables to generate meaningful insights
 - Calculated total spending per learner
@@ -42,7 +47,17 @@ The project uses three main tables:
 - Some learners make multiple purchases, indicating strong engagement
 - Revenue trends fluctuate monthly, showing seasonal demand patterns
 - Identified courses with no purchases, highlighting improvement areas
+## Business Impact
+
+- Helps identify top-performing courses
+- Supports pricing strategy
+- Improves marketing targeting
 
 ## Conclusion
 
 This project demonstrates how SQL can be used to transform raw transactional data into actionable business insights. By analyzing purchasing patterns, course performance, and customer behavior, businesses can make data-driven decisions to improve sales and user engagement.
+## How to Run
+
+1. Import dataset into MySQL / SQLite
+2. Run schema.sql
+3. Execute queries.sql
