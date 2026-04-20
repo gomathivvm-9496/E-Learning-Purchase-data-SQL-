@@ -68,11 +68,6 @@ Tracks revenue growth over time.
 
 
 
-## 📸 Sample Outputs
-
-![Revenue](Sample output/revenue.png)
-![Top Courses](Sample output/top purchase.png)
-![Trend](Sample output/monthly_trend.png)
 
 
 
