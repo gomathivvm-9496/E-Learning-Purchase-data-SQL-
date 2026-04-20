@@ -1,63 +1,80 @@
-# E-Learning Purchase Data Analysis
-## Project Overview
 
-- This project analyzes an e-learning platform’s purchase data using SQL. It focuses on understanding learner behavior, course performance, and revenue generation through structured queries and relational database design.
+# 🎓 E-Learning Purchase Data Analysis (SQL Project)
 
-- The database consists of learners, courses, and purchase transactions, enabling analysis of sales trends and user engagement.
-## Objective
-- Analyze learner purchasing behavior
-- Identify top-performing courses
-- Calculate revenue across different categories
-- Understand country-wise contribution to revenue
-- Detect repeat customers and engagement patterns
-## Dataset Description
+## 📌 Overview
+This project analyzes e-learning purchase data using SQL to understand learner behavior, course performance, revenue trends, and business insights.
 
-The project uses three main tables:
 
-- users → user details
-- courses → course information
-- purchases → transaction data
 
-## Tools & Technologies
-- SQL (MySQL)
-- Relational Database Concepts
-- Joins (INNER, LEFT, RIGHT)
-- Aggregate Functions (SUM, AVG, COUNT)
-- Grouping & Filtering (GROUP BY, HAVING)
-- Date Functions
-## SQL Concepts Used
+## 🎯 Problem Statement
+To analyze e-learning platform data and extract insights related to learner spending, course popularity, revenue trends, and country-wise performance.
 
-- JOIN
+
+
+## 🗄️ Database Schema
+
+### Tables Used:
+- learners (learner_id, full_name, country)
+- courses (course_id, course_name, category, unit_price)
+- purchases (purchase_id, learner_id, course_id, quantity, purchase_date)
+
+
+
+## ⚙️ SQL Concepts Used
+- JOIN (Inner, Left, Right)
 - GROUP BY
 - ORDER BY
-- Aggregation (SUM, COUNT)
+- Aggregations (SUM, AVG, COUNT)
 - Subqueries
-## Key Analysis 
-- Joined multiple tables to generate meaningful insights
-- Calculated total spending per learner
-- Identified top-selling courses
-- Analyzed category-wise revenue
-- Evaluated repeat purchase behavior
-- Generated monthly revenue trends
+- Date functions
 
-## Key Insights
-- Certain courses generate significantly higher revenue due to higher pricing and demand
-- Analytics and Programming categories show strong performance
-- Revenue contribution varies across countries, with one country leading overall
-- Some learners make multiple purchases, indicating strong engagement
-- Revenue trends fluctuate monthly, showing seasonal demand patterns
-- Identified courses with no purchases, highlighting improvement areas
-## Business Impact
 
-- Helps identify top-performing courses
-- Supports pricing strategy
-- Improves marketing targeting
 
-## Conclusion
+## 📊 Key Analysis Performed
 
-This project demonstrates how SQL can be used to transform raw transactional data into actionable business insights. By analyzing purchasing patterns, course performance, and customer behavior, businesses can make data-driven decisions to improve sales and user engagement.
-## How to Run
+### 1. Total Spending per Learner
+Identifies how much each learner has spent.
 
-1. Import dataset into MySQL / SQLite
-2. Run schema.sql
-3. Execute queries.sql
+### 2. Top 3 Most Purchased Courses
+Shows most popular courses based on quantity sold.
+
+### 3. Category-wise Revenue
+Analyzes revenue generated per course category.
+
+### 4. Repeat Buyers
+Identifies learners with multiple purchases.
+
+### 5. Monthly Revenue Trend
+Tracks revenue growth over time.
+
+
+
+## 📈 Key Insights
+
+- Programming courses generate high demand
+- Some learners contribute significantly to revenue
+- Analytics category shows strong engagement
+- Repeat buyers indicate strong platform usage
+- Revenue varies by country and category
+
+
+
+## 💡 Business Recommendations
+
+- Promote high-performing courses
+- Focus marketing on top countries
+- Encourage repeat purchases through discounts
+- Improve underperforming categories
+
+
+
+## 📸 Sample Outputs
+
+![Revenue](sample_output_images/revenue.png)
+![Top Courses](sample_output_images/top_courses.png)
+![Trend](sample_output_images/monthly_trend.png)
+
+
+
+## 🚀 Conclusion
+This project demonstrates how SQL can be used to analyze e-learning data and generate meaningful business insights for decision-making.
